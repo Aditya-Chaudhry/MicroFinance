@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %} 
+This is Withdraw Page
+<br>
+<hr>
+<div class="container">
+    <form action='/withdraw' method="post">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Withdraw Amount</label>
+          <input type="text" name = "withdraw" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{% endblock %}
